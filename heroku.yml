@@ -1,0 +1,14 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: yarn start
+setup:
+  addons:
+    - plan: mongolab:sandbox
+      as: MONGODB_PATH
+    - plan: heroku-redis:hobby-dev
+      as: REDIS_URL
+
+  config:
+    S3_BUCKET: NODE_ENV

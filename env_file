@@ -1,0 +1,5 @@
+PORT=3002
+STORAGE_REPO=local
+REDIS_URL=<fill in>
+MONGO_URL=<fill in>
+

@@ -1,0 +1,1 @@
+FROM sindresvendby/xapi-service:v2.3.2
